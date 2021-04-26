@@ -1,3 +1,5 @@
+/* Base Style
+============== */
 * {
     margin: 0;
     padding: 0;
@@ -15,30 +17,30 @@ html, body {
     overflow-x: hidden;
 }
 
-.clearfix:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
-.wrapper {
+.container {
     width: 80%;
     min-height: 100%;
     margin: 0 auto;
 }
 
-.sidebar {
+/* Common CSS
+============== */
+
+/* Sidebar
+=========== */
+aside {
     width: 20%;
     height: 100vh;
     background: #80454598;
     position: fixed;
-    float: left;
 }
 
-.main-content {
+/* Main Area
+============= */
+main {
     width: 70%;
     background: #4e3c7798;
-    float: right;
+    margin-left: auto;
 }
 
 .about {
