@@ -10,11 +10,13 @@ html, body {
     font-family: 'Lato', sans-serif;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/background-image.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../images/background-image.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 .container {
@@ -31,8 +33,140 @@ html, body {
 aside {
     width: 20%;
     height: 100vh;
-    background: #80454598;
+    background: #A43F49;
     position: fixed;
+    overflow-y: auto;
+}
+
+aside::-webkit-scrollbar {
+    display: none;
+}
+
+/* User Profile 
+----------------- */
+.user-profile {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+/* profile-picture */
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-picture img {
+    width: 140px;
+    height: auto;
+    transform: scale(1.6);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* profile-info */
+.profile-info {
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.05rem;
+}
+
+.profile-info h2 {
+    font-size: 1.5rem;
+}
+
+.profile-info p {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Main Menu
+------------- */
+.main-menu {
+    margin-top: 30px;
+}
+
+.main-menu nav {
+    text-align: center;
+}
+
+.main-menu nav ul {
+    list-style: none;
+}
+
+.main-menu nav ul li {
+    border-top: 1px solid #fff;
+}
+
+.main-menu nav ul li:last-child {
+    border-bottom: 1px solid #fff;
+}
+
+.main-menu nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    transition: all 0.5s;
+}
+
+.main-menu nav ul li a:hover {
+    background-color: #fff;
+    color: #A43F49;
+}
+
+.main-menu nav ul li a.active {
+    background-color: #fff;
+    color: #A43F49;
+}
+
+/* Social Icons
+--------------- */
+.social-icons {
+    padding: 70px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: #A43F49;
+}
+
+/* Copyrights
+-------------- */
+.copyrights {
+    border-top: 1px solid #fff;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.copyrights p {
+    color: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
 }
 
 /* Main Area

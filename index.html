@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shahriar Rahi - Portfolio website</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shahriar Rahi - Portfolio website</title>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/445f742346.js"
+            crossorigin="anonymous"
+        ></script>
 
-<body>
-    <div class="container">
-        <!-- Sidebar Start -->
-        <aside>
-        </aside>
-        <!-- Sidebar End -->
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-        <!-- Main Area Start -->
-        <main>
-            <section class="about"></section>
-            <section class="good"></section>
-            <section class="work"></section>
-            <section class="contact"></section>
-        </main>
-        <!-- Main Area End -->
-    </div>
-</body>
+    <body>
+        <div class="container">
+            <!-- Sidebar Start -->
+            <aside>
+                <!-- User Profile -->
+                <div class="user-profile">
+                    <div class="profile-picture">
+                        <img
+                            src="./images/profile-picture.jpg"
+                            alt="profile picture"
+                        />
+                    </div>
+                    <div class="profile-info">
+                        <h2>Shahriar Sharif</h2>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
 
+                <!-- Main Menu -->
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#about" class="active">About Me</a>
+                            </li>
+                            <li><a href="#goodAt">What I’m Good At</a></li>
+                            <li><a href="#myWork">My Work</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-rss"></i>
+                    </a>
+                </div>
+
+                <!-- Copyrights -->
+                <div class="copyrights">
+                    <p>Copyright 2021 Shahriar Rahi</p>
+                </div>
+            </aside>
+            <!-- Sidebar End -->
+
+            <!-- Main Area Start -->
+            <main>
+                <section id="about" class="about"></section>
+                <section id="goodAt" class="good"></section>
+                <section id="myWork" class="work"></section>
+                <section id="contact" class="contact"></section>
+            </main>
+            <!-- Main Area End -->
+        </div>
+    </body>
 </html>
