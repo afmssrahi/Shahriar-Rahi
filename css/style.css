@@ -89,7 +89,7 @@ aside::-webkit-scrollbar {
 /* Main Menu
 ------------- */
 .main-menu {
-    margin-top: 60px;
+    margin-top: 5vh;
 }
 
 .main-menu nav {
@@ -132,7 +132,7 @@ aside::-webkit-scrollbar {
 /* Social Icons
 --------------- */
 .social-icons {
-    padding: 80px 0;
+    padding: 5vh 0;
     text-align: center;
     font-size: 1rem;
 }
@@ -157,8 +157,8 @@ aside::-webkit-scrollbar {
 /* Copyrights
 -------------- */
 .copyrights {
-    border-top: 1px solid #fff;
-    padding: 25px 0;
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+    padding: 15px 0;
     margin-bottom: 30px;
     text-align: center;
 }
