@@ -10,7 +10,7 @@ html, body {
     font-family: 'Lato', sans-serif;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../images/background-image.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./../images/background-image.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,7 +27,21 @@ html, body {
 
 /* Common CSS
 ============== */
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #A43F49;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 8px 13px;
+    border-radius: 2px;
+}
 
+.btn a {
+    text-decoration: none;
+    color: #A43F49;
+}
 /* Sidebar
 =========== */
 aside {
@@ -75,7 +89,7 @@ aside::-webkit-scrollbar {
     letter-spacing: 0.05rem;
 }
 
-.profile-info h2 {
+.profile-info h1 {
     font-size: 1.5rem;
 }
 
@@ -89,7 +103,7 @@ aside::-webkit-scrollbar {
 /* Main Menu
 ------------- */
 .main-menu {
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 .main-menu nav {
@@ -173,26 +187,100 @@ aside::-webkit-scrollbar {
 ============= */
 main {
     width: 70%;
-    background: #4e3c7798;
     margin-left: auto;
 }
 
-.about {
-    height: 100vh;
-    background: #40248398;
+main > section {
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 50px 0;
 }
 
-.good {
-    height: 100vh;
-    background: #8cbb1e98;
+main > section:first-child {
+    border-top: none;
 }
 
-.work {
-    height: 100vh;
-    background: #40248398;
+/* Main Area All Section Header
+-------------------------------- */
+main > section .section-header {
+    width: 80%;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.05rem;
 }
 
-.contact {
-    height: 100vh;
-    background: #8cbb1e98;
+main > section .section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+main > section .section-header .section-heading-separator {
+    width: 50px;
+    height: 3px;
+    background-color: #A43F49;
+    margin: 0 auto 10px;
+}
+
+main > section .section-header p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #c9c9c9;
+    line-height: 1.5;
+}
+
+/* About Section
+------------------- */
+.about-section-article {
+    width: 850px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 35px 0;
+}
+
+.about-section-article:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.article-image {
+    width: 420px;
+    max-width: 48%;
+    height: 260px;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.article-content {
+    width: 52%;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+
+.article-content h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.article-content p {
+    color: #c9c9c9;
+    padding: 15px 0;
+}
+
+.about-section-article:nth-child(odd) .article-image {
+    order: 2;
+}
+
+.about-section-article:nth-child(odd) .article-content {
+    order: 1;
+    padding-left: 0;
+    padding-right: 25px;
 }
